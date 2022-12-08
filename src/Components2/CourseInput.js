@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import App from './App';
+// import App from './App';
 
 import Button from './Button';
 import './CourseInput.css';
@@ -23,7 +23,8 @@ const CourseInput = props => {
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
       <Button type="submit">Add Goal</Button>
-      <button onClick={<App/>}>Go Back</button>
+      {/*<button onClick={<App/>}>Go Back</button>*/}
+      <button>Go Back (not working)</button>
     </form>
   );
 };

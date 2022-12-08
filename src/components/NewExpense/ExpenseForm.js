@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ExpenseForm.css';
-import App1 from './Components2/Apps1';
-import {Routes, Route, useNavigate} from 'react-router-dom';
+// import App1 from '../../Components2/Apps1';
+// import {Routes, Route, useNavigate} from 'react-router-dom';
 
 const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState('');
@@ -13,10 +13,10 @@ const ExpenseForm = (props) => {
   //   enteredDate: '',
   // });
 
-  const navigate = useNavigate ();
-  const navigateToApp1 = () =>{
-    navigate (<App1 />)
-  };
+  // const navigate = useNavigate ();
+  // const navigateToApp1 = () =>{
+  //   navigate (<App1 />)
+  // };
 
   const titleChangeHandler = (event) => {
     setEnteredTitle(event.target.value);
@@ -95,10 +95,11 @@ const ExpenseForm = (props) => {
       <div className='new-expense__actions'>
         <button type="reset" onClick={props.onCancel}>Cancel</button>
         <button type='submit'>Add Expense</button>
-        <button type="button" onClick={navigateToApp1}>Go to styling</button>
-        <Routes>
-          <Route path={<App1 />} element={<App1 />} />
-        </Routes>
+        <button type="button" >Go to styling(not working)</button>
+        {/*<button type="button" onClick={navigateToApp1}>Go to styling</button>*/}
+        {/*<Routes>*/}
+          {/*<Route path={<App1 />} element={<App1 />} />*/}
+        {/*</Routes>*/}
       </div>
     </form>
   );
