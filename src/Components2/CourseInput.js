@@ -23,8 +23,6 @@ const CourseInput = props => {
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
       <Button type="submit">Add Goal</Button>
-      {/*<button onClick={<App/>}>Go Back</button>*/}
-      <button>Go Back (not working)</button>
     </form>
   );
 };

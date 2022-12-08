@@ -95,11 +95,6 @@ const ExpenseForm = (props) => {
       <div className='new-expense__actions'>
         <button type="reset" onClick={props.onCancel}>Cancel</button>
         <button type='submit'>Add Expense</button>
-        <button type="button" >Go to styling(not working)</button>
-        {/*<button type="button" onClick={navigateToApp1}>Go to styling</button>*/}
-        {/*<Routes>*/}
-          {/*<Route path={<App1 />} element={<App1 />} />*/}
-        {/*</Routes>*/}
       </div>
     </form>
   );
