@@ -9,7 +9,7 @@ const CourseInput = props => {
 
   const goalInputChangeHandler = event => {
     setEnteredValue(event.target.value);
-  };
+  }; 
 
   const formSubmitHandler = event => {
     event.preventDefault();
@@ -23,7 +23,7 @@ const CourseInput = props => {
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
       <Button type="submit">Add Goal</Button>
-      <button  onClick={<App/>}>Go Back</button>
+      <button onClick={<App/>}>Go Back</button>
     </form>
   );
 };
