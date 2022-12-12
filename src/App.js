@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import NavBar from './NavBar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Apps1 from "./Components2/Apps1";
 import AppOld from "./Components2/AppOld";
+import App3 from './module3/User/Apps3';
+import App4 from './module4/Home/Apps4';
 
 const INITIAL_EXPENSES = [
   {
@@ -36,7 +38,10 @@ const App = () => {
         <Routes>
           <Route path="/module1" element={<AppOld/>}/>
           <Route path="/module2" element={<Apps1/>}/>
-        </Routes>
+          <Route path="/module3" element={<App3/>}/>
+          <Route path="/module4" element={<App4/>}/>
+
+         </Routes>
       </Router>
     </>
   );

@@ -9,6 +9,8 @@ const NavBar = () => {
         <ul>
           <li><Link to={"/module1"} className="nav-link">Module 1</Link></li>
           <li><Link to={"/module2"} className="nav-link">Module 2</Link></li>
+          <li><Link to={"/module3"} className="nav-link">Module 3</Link></li>
+          <li><Link to={"/module4"} className="nav-link">Module 4</Link></li>
         </ul>
       </div>
     </>

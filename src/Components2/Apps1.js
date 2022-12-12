@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import CourseGoalList from './CourseGoalList';
 import CourseInput from './CourseInput';
 import './App1.css';
