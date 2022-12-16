@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import NavBar from '../../NavBar';
 
 import AddUser from './AddUser';
 import UsersList from './UserList';
 
-function App3() {
+function Module3() {
   const [usersList, setUsersList] = useState([]);
 
   const addUserHandler = (uName, uAge) => {
@@ -17,10 +18,11 @@ function App3() {
 
   return (
     <React.Fragment>
+      <NavBar />
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersList} />
     </React.Fragment>
   );
 }
 
-export default App3;
+export default Module3;

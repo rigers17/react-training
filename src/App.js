@@ -1,45 +1,23 @@
 import React from 'react';
-import NavBar from './NavBar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Apps1 from "./Components2/Apps1";
-import AppOld from './Components2/AppOld';
-import App3 from './module3/User/Apps3';
-import App4 from './module4/Home/Apps4';
-
-const INITIAL_EXPENSES = [
-  {
-    id: 'e1',
-    title: 'Toilet Paper',
-    amount: 94.12,
-    date: new Date(2020, 7, 14),
-  },
-  { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
-  {
-    id: 'e3',
-    title: 'Car Insurance',
-    amount: 294.67,
-    date: new Date(2021, 2, 28),
-  },
-  {
-    id: 'e4',
-    title: 'New Desk (Wooden)',
-    amount: 450,
-    date: new Date(2021, 5, 12),
-  },
-];
+import Module1 from './Components2/Module1';
+import Module2 from './Components2/Module2';
+import Module3 from './module3/User/Module3';
+import Module4 from './module4/Home/Module4';
+import Module5 from './Module5/UI/Module5';
 
 const App = () => {
 
   return (
     <>
       <Router>
-        <NavBar/>
 
         <Routes>
-          <Route path="/module1" element={<AppOld/>}/>
-          <Route path="/module2" element={<Apps1/>}/>
-          <Route path="/module3" element={<App3/>}/>
-          <Route path="/module4" element={<App4/>}/>
+          <Route path="/module1" element={<Module1/>}/>
+          <Route path="/module2" element={<Module2/>}/>
+          <Route path="/module3" element={<Module3/>}/>
+          <Route path="/module4" element={<Module4/>}/>
+          <Route path="/module5" element={<Module5/>}/>
 
          </Routes>
       </Router>

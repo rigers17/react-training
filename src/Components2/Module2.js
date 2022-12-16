@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import CourseGoalList from './CourseGoalList';
 import CourseInput from './CourseInput';
 import './App1.css';
+import NavBar from '../NavBar';
 
-const App1 = () => {
+const Module2 = () => {
   const [courseGoals, setCourseGoals] = useState([
     { text: 'Do all exercises!', id: 'g1' },
     { text: 'Finish the course!', id: 'g2' }
@@ -36,6 +37,7 @@ const App1 = () => {
 
   return (
     <div>
+      <NavBar />
       <section id="goal-form">
         <CourseInput onAddGoal={addGoalHandler} />
       </section>
@@ -53,4 +55,4 @@ const App1 = () => {
   );
 };
 
-export default App1;
+export default Module2;

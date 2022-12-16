@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .navbar ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  .navbar ul li .nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  .navbar ul li .nav-link:hover{
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }

@@ -5,7 +5,7 @@ import Home from './Home';
 import MainHeader from '../MainHeader/MainHeader'
 import AuthContext from '../Store/Auth-context';
 
-function App4() {
+function Module4() {
   const ctx = useContext(AuthContext);
 
   return (
@@ -19,5 +19,5 @@ function App4() {
   );
 }
 
-export default App4;
+export default Module4;
 
