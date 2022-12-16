@@ -29,7 +29,7 @@ const AppOld = () => {
 
   const addExpenseHandler = (expense) => {
     setExpenses((prevExpenses) => {
-      return [expense, ...prevExpenses];
+      return [expense, ...prevExpenses]; 
     });
   };
 
@@ -42,7 +42,7 @@ const AppOld = () => {
 
   return (
     <div>
-      <NewExpense onAddExpense={addExpenseHandler} />
+      <NewExpense props={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );

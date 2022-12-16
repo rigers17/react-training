@@ -2,7 +2,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Apps1 from "./Components2/Apps1";
-import AppOld from "./Components2/AppOld";
+import AppOld from './Components2/AppOld';
 import App3 from './module3/User/Apps3';
 import App4 from './module4/Home/Apps4';
 
