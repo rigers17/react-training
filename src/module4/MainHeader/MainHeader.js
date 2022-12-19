@@ -2,7 +2,7 @@ import React from 'react';
 
 import Navigation from './Navigation';
 import classes from './MainHeader.module.css';
-import NavBar from '../../NavBar';
+import NavBar from '../../Navbar/NavBar';
 
 const MainHeader = (props) => {
   return (

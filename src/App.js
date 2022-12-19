@@ -1,10 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Module1 from './Components2/Module1';
-import Module2 from './Components2/Module2';
-import Module3 from './module3/User/Module3';
-import Module4 from './module4/Home/Module4';
-import Module5 from './Module5/UI/Module5';
+import Module1 from './Module1/Module1';
+import Module2 from './Module2/Module2';
+import Module3 from './module3/Module3';
+import Module4 from './module4/Module4';
+import Module5 from './Module5/Module5';
+import NavBar from './Navbar/NavBar';
 
 const App = () => {
 
@@ -13,6 +14,7 @@ const App = () => {
       <Router>
 
         <Routes>
+          <Route path="/" element={<NavBar/>} />
           <Route path="/module1" element={<Module1/>}/>
           <Route path="/module2" element={<Module2/>}/>
           <Route path="/module3" element={<Module3/>}/>

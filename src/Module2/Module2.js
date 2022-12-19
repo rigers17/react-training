@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import CourseGoalList from './CourseGoalList';
-import CourseInput from './CourseInput';
-import './App1.css';
-import NavBar from '../NavBar';
+import CourseGoalList from './CourseGoal/CourseGoalList';
+import CourseInput from './CourseGoal/CourseInput';
+import './Module2.css';
+import NavBar from '../Navbar/NavBar';
 
 const Module2 = () => {
   const [courseGoals, setCourseGoals] = useState([

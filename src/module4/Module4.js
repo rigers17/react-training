@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
 
-import Login from '../LogIn/LogIn';
-import Home from './Home';
-import MainHeader from '../MainHeader/MainHeader'
-import AuthContext from '../Store/Auth-context';
+import Login from '../module4/LogIn/LogIn';
+import Home from '../module4/Home/Home';
+import MainHeader from '../module4/MainHeader/MainHeader'
+import AuthContext from '../module4/Store/Auth-context';
 
 function Module4() {
   const ctx = useContext(AuthContext);

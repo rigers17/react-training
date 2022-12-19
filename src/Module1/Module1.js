@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import NewExpense from '../components/NewExpense/NewExpense';
-import Expenses from '../components/expenses/Expenses';
-import NavBar from '../NavBar';
+import NewExpense from './NewExpense/NewExpense';
+import Expenses from './Expenses/Expenses';
+import NavBar from '../Navbar/NavBar';
 
 const INITIAL_EXPENSES = [
   {
@@ -44,7 +44,7 @@ const Module1 = () => {
   return (
     <div>
       <NavBar />
-      <NewExpense props={addExpenseHandler} />
+      <NewExpense expense={addExpenseHandler} />
       <Expenses items={expenses} />
     </div>
   );
