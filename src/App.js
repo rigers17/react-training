@@ -5,6 +5,8 @@ import Module2 from './Module2/Module2';
 import Module3 from './module3/Module3';
 import Module4 from './module4/Module4';
 import Module5 from './Module5/Module5';
+import Module6 from './Module6/Module6';
+import Module7 from './Module7/Module7';
 import NavBar from './Navbar/NavBar';
 
 const App = () => {
@@ -20,6 +22,8 @@ const App = () => {
           <Route path="/module3" element={<Module3/>}/>
           <Route path="/module4" element={<Module4/>}/>
           <Route path="/module5" element={<Module5/>}/>
+          <Route path="/module6" element={<Module6/>}/>
+          <Route path="/module7" element={<Module7/>}/>
 
          </Routes>
       </Router>
