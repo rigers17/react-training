@@ -10,6 +10,7 @@ class UserFinder extends Component {
 
   constructor() {
     super();
+    console.log('inside UserFinder')
     this.state = {
       filteredUsers: [],
       searchTerm: '',
@@ -17,21 +18,32 @@ class UserFinder extends Component {
   }
 
   componentDidMount() {
+    console.log('New filterUsers to render:', this.context.users)
     // Send http request...
-    this.setState({ filteredUsers: this.context.users });
+    var newUsers = { filteredUsers: this.context.users }
+    this.setState(newUsers);
   }
 
   componentDidUpdate(prevProps, prevState) {
+    console.log('prevState:', prevState)
+    console.log('prevprops:', prevProps)
     if (prevState.searchTerm !== this.state.searchTerm) {
+      let filteredUsersCal = this.filterUsers() 
+      console.log('filteredUsersCal:', filteredUsersCal)
       this.setState({
-        filteredUsers: this.context.users.filter((user) =>
-          user.name.includes(this.state.searchTerm)
-        ),
+        filteredUsers: filteredUsersCal,
       });
     }
   }
 
+  filterUsers() {
+    return this.context.users.filter((user) => user.name.includes(this.state.searchTerm))
+   //return this.context.users[0]
+    ;
+  }
+
   searchChangeHandler(event) {
+    console.log('inside searchChangeHandler.key Inserted:', event.target.value)
     this.setState({ searchTerm: event.target.value });
   }
 

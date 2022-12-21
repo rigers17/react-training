@@ -7,6 +7,7 @@ import Module4 from './module4/Module4';
 import Module5 from './Module5/Module5';
 import Module6 from './Module6/Module6';
 import Module7 from './Module7/Module7';
+import Module8 from './Module8/Module8';
 import NavBar from './Navbar/NavBar';
 
 const App = () => {
@@ -24,6 +25,7 @@ const App = () => {
           <Route path="/module5" element={<Module5/>}/>
           <Route path="/module6" element={<Module6/>}/>
           <Route path="/module7" element={<Module7/>}/>
+          <Route path="/module8" element={<Module8/>}/>
 
          </Routes>
       </Router>

@@ -18,6 +18,7 @@ class Users extends Component {
     // } catch (err) {
     //   // handle error
     // }
+    console.log('props:', this.props)
     if (this.props.users.length === 0) {
       throw new Error('No users provided!');
     }
@@ -48,7 +49,7 @@ class Users extends Component {
       </div>
     );
   }
-}
+};
 
 // const Users = () => {
 //   const [showUsers, setShowUsers] = useState(true);
